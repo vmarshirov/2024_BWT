@@ -12,8 +12,11 @@
 <h4>Параграфы, заголовки, выравнивание</h4>
     
 <p>Параграфы</p>
-<p>В этом параграфе встроен <span>оригинальный фрагмент</span> продолжение параграфа
+<p>В этом параграфе встроен <span >оригинальный фрагмент</span> продолжение параграфа
 </p>
+<p>В этом параграфе встроен <span id="origin">новый оригинальный фрагмент</span> продолжение параграфа
+</p>
+
 <p>В текущем параграфе есть<br>разрыв строки</p>
 
 <p id="for_click">кликнуть</p>
@@ -92,6 +95,7 @@
 <script>
     document.getElementsByTagName("span")[0].innerHTML = "<b>Новый фрагмент</b>"
     document.getElementById("for_click").innerHTML = "2 - вносим изменения"
+    document.getElementById("origin").innerHTML = "<b>Новый фрагмент по id</b>"
 </script>
 <script src="../js/010_typography.js"></script>
 
