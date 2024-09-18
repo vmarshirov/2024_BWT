@@ -94,8 +94,14 @@
 </body>
 <script>
     document.getElementsByTagName("span")[0].innerHTML = "<b>Новый фрагмент</b>"
-    document.getElementById("for_click").innerHTML = "2 - вносим изменения"
-    document.getElementById("origin").innerHTML = "<b>Новый фрагмент по id</b>"
+    let name = document.getElementById("origin").innerText
+    console.log("имя (свойство старое): ", name)
+    let node_name = document.getElementById("origin")
+    console.log("имя (свойство узла): ", node_name.innerText)
+    node_name.innerText = "Иван"
+    console.log("имя (новое свойство узла): ", node_name.innerText)
+
+    
 </script>
 <script src="../js/010_typography.js"></script>
 
